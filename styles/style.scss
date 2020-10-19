@@ -1,0 +1,245 @@
+///variaveis 
+
+//DARK THEME
+
+// html[data-theme='dark'] {
+//     background: var(--lightBg);
+//    --lightBtn: #FFBD07;
+//    --lightBg: #232323;
+//    --lightColor: #fff;
+//  }
+
+//  html[data-theme='clean'] {
+//     background: var(--lightBg);
+//    --lightBtn: #9176d1;
+//    --lightBg: #ff0000;
+//    --lightColor: #fff;
+//  }
+
+
+
+//CLAN THEME
+
+
+
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+
+    @media only screen and (max-width: 600px) {
+        flex-direction: column;
+    }
+}
+
+.side.mobile{
+    transform: translateX(0)!important;
+}
+
+
+.side {
+    width: 20%;
+    height: 100%;
+    background: #fff;
+
+
+    @media only screen and (max-width: 600px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100vh;
+        text-align: center;
+        padding-top: 112px;
+        background: #7eb4e2;
+        z-index: 10;
+        transition: all .4s ease-in-out;
+        transform: translateX(-100%);
+
+    }
+
+    
+  
+
+    &-container {
+        border-right: 1px solid rgb(214, 213, 213);
+        height: 100%;
+
+        &-title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 80%;
+
+
+            &__titled {
+                font-size: 2rem;
+                margin: 0.5rem;
+
+            }
+        }
+
+        &-subtitle {
+            width: 80%;
+            margin: 0 auto;
+            padding: 0rem 2rem;
+        }
+
+        &-subtitled {
+            font-size: 12px;
+        }
+
+        &-img {
+            max-width: 32px;
+        }
+
+        &-list {
+            list-style: none;
+            padding-right: 1rem;
+            margin: 0 auto;
+            padding: 0;
+            width: 80%;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #eaeaea;
+
+        }
+
+        li {
+            padding: 0.8rem;
+            border-radius: 8px;
+
+            &:hover {
+                background: #6C61D0;
+                color: #fff;
+            }
+
+            a {
+                color: #808291;
+                text-decoration: none;
+                font-size: 0.75rem;
+                margin-left: 10px;
+
+                &:active {
+                    color: #fff;
+                }
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+}
+
+
+
+.middle {
+    width: 80%;
+
+    &-container {
+        width: 65%;
+        margin: 0 auto;
+
+        &--banner {
+            background-color: #6C61D0;
+            height: 200px;
+            padding: 0.5rem 4rem;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &__title {
+                font-size: 1.75rem;
+                color: #fff;
+                font-weight: 500;
+                margin: 0.3125rem;
+            }
+
+            &__subtitle {
+                color: #fff;
+                margin: 1.3125rem 0rem;
+                font-weight: 100;
+            }
+
+            &__btn {
+                width: 135px;
+                height: 45px;
+                font-weight: 500;
+                background-color: #fff;
+                color: --lightBg;
+                font-family: 'Roboto', sans-serif;
+                border-radius: 14px;
+                border: none;
+            }
+        }
+    }
+
+    &-content {
+        background-color: #fff;
+        box-shadow: 0px 0px 10px -5px #b5a5b5;
+        width: 65%;
+        margin: 0 auto;
+        border-radius: 14px;
+        margin-top: 2.5rem;
+
+        &-filters {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 1rem;
+
+            select,
+            input {
+                border: 0;
+                height: 41px;
+                background-color: rgb(247, 247, 247);
+                border-radius: 10px;
+                color: #808291;
+                width: 265px;
+                font-family: 'Roboto', sans-serif;
+
+                &:not(input) {
+                    width: 155px;
+                }
+            }
+        }
+
+
+        &-table {
+
+            table {
+                width: 100%;
+
+                td {
+
+                    text-align: center;
+                    font-weight: 100;
+                    font-size: 12px;
+
+                    img {
+                        max-width: 20px;
+                        vertical-align: middle;
+
+                    }
+                }
+            }
+
+            &__head {
+
+                th {
+                    border-bottom: 1px solid #ececec;
+                    padding: 1rem 0rem;
+                    font-weight: 100;
+
+                }
+            }
+        }
+    }
+}
