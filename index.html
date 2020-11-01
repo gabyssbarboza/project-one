@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="clean">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +10,10 @@
 </head>
 <body>
 
-    <h1 class="side-titulo">open menu</h1>
     <nav class="side">
+        <div class="side-mobile">
+            X
+        </div>
         <div class="side-container">
             <div class="side-container-title">
             <img class="side-container-img" src="https://img.pngio.com/png-icon-164327-free-icons-library-png-icon-1200_1238.jpg" alt="Logo Unity">
@@ -77,6 +79,16 @@
                    </li>
                 
             </ul>
+
+            <div class="side-container-toggle">
+
+              
+        <input class="side-container-toggle__content" type="checkbox" id="switch" name="mode">
+        <label for="switch">Toggle</label>
+        </div>
+
+
+            </div>
             
         </div>
     </nav>
@@ -95,45 +107,63 @@
             <button class="middle-container--banner__btn">Check all settings</button>
         </div>
         </div>
+
+
+        
      
 
         <div class="middle-content">
 
             <div class="middle-content-filters">
+            <div class="middle-content-filters__selects">
                 <select name="" id="">
                     <option value="">August</option>
                     <option value="">September</option>
                 </select>
 
-                <select name="" id="">
-                    <option value="">August</option>
-                    <option value="">September</option>
+                <select  name="" id="teste">
+                    <option selected change="teste(e)" value="all">All</option>
+                    <option change="teste(e)" value="instock">In Stock</option>
+                    <option change="teste(e)" value="nostock">No Stock</option>
                 </select>
-
-                <input type="text" id="input-search">
-
-                <span>
+            </div>
+            <div class="middle-content-filters__search">
+                <span class="search-icon">
+                    <input onkeyup="searching()" type="text" id="input-search">
+                  </span>
+            </div>
+            <div class="middle-content-filters__buttons">
+                <span class="edit-button">
                     <i class="fas fa-pen-alt"></i>
                 </span>
-                <span>
+                <span class="delete-button">
                     <i class="far fa-trash-alt"></i>
                 </span>
             </div>
+            </div>
             <div class="middle-content-table">
-                <table class="middle-content-table__all">
-                    <thead>
-                    <tr class="middle-content-table__head">
-                      <th>
+               
+
+
+                <div class="middle-content-table__all">
+                
+                    <div class="middle-content-table__head">
+                      <div>
                           <input type="checkbox" name="select-all" id="select-all">
-                      </th>
-                      <th></th>
-                      <th>Amount</th>
-                      <th>Color</th>
-                      <th>Price</th>
-                      <th>Rating</th>
-                    </tr>
-                </thead>
-                </table>
+                      </div>
+                      <div class="middle-content-table__head--second"></div>
+                      <div>Amount</div>
+                      <div>Color</div>
+                      <div>Price</div>
+                      <div>Rating</div>
+                    </div>
+
+
+                    <div class="middle-content-table__content">
+                       
+                      </div>
+                
+                </div>
             </div>
 
           
