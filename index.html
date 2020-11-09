@@ -12,11 +12,11 @@
 
     <nav class="side">
         <div class="side-mobile">
-            X
+            <i class="fa fa-bars"></i>
         </div>
         <div class="side-container">
             <div class="side-container-title">
-            <img class="side-container-img" src="https://img.pngio.com/png-icon-164327-free-icons-library-png-icon-1200_1238.jpg" alt="Logo Unity">
+            <img class="side-container-img" src="/logo-title.png" alt="Logo Unity">
             <p class="side-container-title__titled"> Unity.</p>
             </div>
 
@@ -63,17 +63,17 @@
             </div>
             
              
-            <ul class="side-container-list">
-                <li class="side-container-item">
+            <ul class="side-container-list personal-list">
+                <li class="side-container-item personal-list-item">
                     <i class="fas fa-inbox"></i>
                     <a href="">Inbox</a>
                    
                 </li>
-                <li class="side-container-item">
+                <li class="side-container-item personal-list-item">
                     <i class="far fa-dot-circle"></i>
                     <a href="">Notifications</a>
                     </li>
-                <li class="side-container-item">
+                <li class="side-container-item personal-list-item">
                     <i class="fas fa-comments"></i>
                     <a href="">Comments</a>
                    </li>
@@ -81,13 +81,10 @@
             </ul>
 
             <div class="side-container-toggle">
-
-              
         <input class="side-container-toggle__content" type="checkbox" id="switch" name="mode">
-        <label for="switch">Toggle</label>
+        <!-- <i class="fas fa-comments"></i> -->
+        <label for="switch"></label>
         </div>
-
-
             </div>
             
         </div>
@@ -96,9 +93,8 @@
     <main class="middle">
         <div class="middle-container">
         <div class="middle-container--text">
-        <!-- <input type="checkbox" name="mode"> Theme -->
-        <p class="middle-container--text__subtitle">Hi, Tan Tan,</p>
-        <h1 class="middle-container--text__title">Welcome back!👋</h1>
+        <p class="middle-container--text__title">Hi, Tan Tan,</p>
+        <h1 class="middle-container--text__subtitle">Welcome back!👋</h1>
         </div>
 
         <div class="middle-container--banner">
@@ -116,15 +112,19 @@
 
             <div class="middle-content-filters">
             <div class="middle-content-filters__selects">
-                <select name="" id="">
-                    <option value="">August</option>
-                    <option value="">September</option>
+                <select name="" id="filter-rating">
+                    <option value="0">Rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
                 </select>
 
-                <select  name="" id="teste">
+                <select  name="" id="filter-stock">
                     <option selected change="teste(e)" value="all">All</option>
-                    <option change="teste(e)" value="instock">In Stock</option>
-                    <option change="teste(e)" value="nostock">No Stock</option>
+                    <option  value="instock">In Stock</option>
+                    <option  value="nostock">No Stock</option>
                 </select>
             </div>
             <div class="middle-content-filters__search">
@@ -159,35 +159,14 @@
                     </div>
 
 
-                    <div class="middle-content-table__content">
+                    <div class="middle-content-table__content" id="content-all">
                        
                       </div>
                 
                 </div>
             </div>
-
-          
-
         </div>
     </main>
-    
-
-    <script>
-
-        // var input = document.querySelector('input[name=mode]');
-
-
-        // input.addEventListener('change', function() {
-        //     if(this.checked){
-        //         document.documentElement.setAttribute('data-theme', 'dark');
-        //         console.log(this)
-        //     }else{
-        //         document.documentElement.setAttribute('data-theme', 'clean');
-        //     }
-        // })
-    
-
-    </script>
     <script src="./index.js"></script>
 </body>
 </html>
