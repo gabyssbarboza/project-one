@@ -13,6 +13,7 @@ html[data-theme='dark'] {
   --inputBg: #2C2E38;
   --stockColor: #f1f2f2;
   --bgToggle: rgb(4, 17, 35);
+  --bgTitleEdit: #3a3939 ;
 }
 
 html[data-theme='clean'] {
@@ -30,6 +31,7 @@ html[data-theme='clean'] {
   --inputBg: #FAFAFA;
   --stockColor: #1d1d1d;
   --bgToggle:#f5f5f5;
+  --bgTitleEdit: #c5c5c5;
 }
 
 body,
@@ -41,6 +43,7 @@ html {
   display: -ms-flexbox;
   display: flex;
   font-family: 'Roboto', sans-serif;
+  overflow: auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -86,6 +89,8 @@ html {
             justify-content: center;
     -webkit-box-shadow: var(--shadowColor);
             box-shadow: var(--shadowColor);
+    position: fixed;
+    z-index: 200;
   }
 }
 
@@ -106,12 +111,11 @@ html {
 
 @media only screen and (max-width: 768px) {
   .side-container {
-    position: absolute;
-    top: 3.5rem;
+    position: fixed;
+    top: 3.1rem;
     left: 0;
-    height: auto;
+    overflow: auto;
     width: 100%;
-    min-height: 100vh;
     text-align: center;
     background: var(--bgColor);
     z-index: 10;
@@ -319,6 +323,7 @@ html {
 @media only screen and (max-width: 768px) {
   .middle-container--text__title {
     width: 95%;
+    margin-top: 5rem;
   }
 }
 

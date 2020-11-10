@@ -111,7 +111,14 @@ function builtTable() {
     const openMenu = document.querySelector(".side-mobile");
     openMenu.addEventListener("click", function () {
         menu.classList.toggle("mobile");
+        if(document.body.style.overflow == "auto"){
+            document.body.style.overflow == "hidden";
+        }else{
+            document.body.style.overflow == "auto";
+        }
     })
+
+ 
 
     const table = document.querySelector(".middle-content-table__content")
 
@@ -267,7 +274,7 @@ function editRemove() {
                     const paragrafos = editables[i];
                     const titulos = paragrafos.querySelectorAll(".middle-content-table__row--inputs__title")
                     console.log(titulos)
-                    paragrafos.style.background = "#f5f5f5";
+                    paragrafos.style.background = "var(--bgTitleEdit)";
                     // titulos.contentEditable = true;
                     paragrafos.contentEditable = true;
 
