@@ -272,17 +272,20 @@ function editRemove() {
 
                 for (let i = 0; i < editables.length; i++) {
                     const paragrafos = editables[i];
-                    const titulos = paragrafos.querySelectorAll(".middle-content-table__row--inputs__title")
+                    const titulos = paragrafos.querySelector(".middle-content-table__row--inputs__title");
+                    const subtitulos = paragrafos.querySelector(".middle-content-table__row--inputs__subtitle");
                     console.log(titulos)
-                    paragrafos.style.background = "var(--bgTitleEdit)";
-                    // titulos.contentEditable = true;
-                    paragrafos.contentEditable = true;
+                    titulos.style.background = "var(--bgTitleEdit)";
+                    subtitulos.style.background = "var(--bgTitleEdit)";
+                    titulos.contentEditable = true;
+                    subtitulos.contentEditable = true;
+                    // paragrafos.contentEditable = true;
 
                     paragrafos.addEventListener("focus", function(){
                      
-                            titulos.contentEditable = false;
-                            paragrafos.contentEditable = false;
-                            console.log("clicj na janaela")
+                            // titulos.contentEditable = false;
+                            // paragrafos.contentEditable = false;
+                            // console.log("clicj na janaela")
                    
                     }, true);
                     

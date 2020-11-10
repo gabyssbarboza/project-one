@@ -209,6 +209,10 @@ html {
   color: var(--textColorHover);
 }
 
+.side-container .personal-list {
+  margin-bottom: 1em !important;
+}
+
 .side-container .personal-list-item::after {
   content: "2";
   text-align: center;
@@ -461,18 +465,6 @@ html {
   width: 100%;
 }
 
-.middle-content-filters__search .search-icon:before {
-  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/768px-Magnifying_glass_icon.svg.png) no-repeat center center;
-  background-size: 56% auto;
-  content: '';
-  pointer-events: none;
-  height: 100%;
-  left: .5em;
-  position: absolute;
-  top: 0;
-  width: 2em;
-}
-
 .middle-content-filters__search input {
   border: 0;
   height: 41px;
@@ -693,6 +685,11 @@ html {
   .middle-content-table__row--prices {
     width: 50%;
   }
+}
+
+.middle-content-table__row--inputs {
+  width: 60%;
+  text-align: left;
 }
 
 .middle-content-table__row--inputs__title {

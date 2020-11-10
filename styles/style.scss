@@ -202,6 +202,7 @@ html {
         }
 
         .personal-list {
+            margin-bottom: 1em!important;
             &-item {
                 &::after {
 
@@ -435,17 +436,17 @@ html {
                     position: relative;
                     width: 100%;
 
-                    &:before {
-                        background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/768px-Magnifying_glass_icon.svg.png) no-repeat center center;
-                        background-size: 56% auto;
-                        content: '';
-                        pointer-events: none;
-                        height: 100%;
-                        left: .5em;
-                        position: absolute;
-                        top: 0;
-                        width: 2em;
-                    }
+                    // &:before {
+                    //     background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/768px-Magnifying_glass_icon.svg.png) no-repeat center center;
+                    //     background-size: 56% auto;
+                    //     content: '';
+                    //     pointer-events: none;
+                    //     height: 100%;
+                    //     left: .5em;
+                    //     position: absolute;
+                    //     top: 0;
+                    //     width: 2em;
+                    // }
                 }
 
 
@@ -615,6 +616,8 @@ html {
 
 
                 &--inputs {
+                    width: 60%;
+                    text-align: left;
                     &__title {
                         font-size: 0.875rem;
                         font-weight: 500;
