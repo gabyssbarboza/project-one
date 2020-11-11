@@ -268,6 +268,8 @@ function editRemove() {
                 const editFields = item.parentElement.parentNode;
                 console.log(editFields)
                 const editables = editFields.querySelectorAll(".middle-content-table__row--inputs");
+                const saveBtn = document.querySelector(".fa-save");
+                console.log(saveBtn)
 
 
                 for (let i = 0; i < editables.length; i++) {
@@ -279,19 +281,20 @@ function editRemove() {
                     subtitulos.style.background = "var(--bgTitleEdit)";
                     titulos.contentEditable = true;
                     subtitulos.contentEditable = true;
-                    // paragrafos.contentEditable = true;
 
-                    paragrafos.addEventListener("focus", function(){
-                     
-                            // titulos.contentEditable = false;
-                            // paragrafos.contentEditable = false;
-                            // console.log("clicj na janaela")
-                   
-                    }, true);
-                    
-                    
-
-            }
+                    saveBtn.style.display = "block";
+            
+                       saveBtn.addEventListener("click", function(){
+                           
+                                titulos.contentEditable = false;
+                                subtitulos.contentEditable = false;
+                                titulos.style.background = "transparent";
+                                subtitulos.style.background = "transparent";
+                                saveBtn.style.display = "none";
+                               
+                           
+                });
+                }
             }
         })
     });

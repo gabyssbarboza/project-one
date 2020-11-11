@@ -18,6 +18,7 @@ html[data-theme='dark'] {
     --stockColor: #f1f2f2;
     --bgToggle: rgb(4, 17, 35);
     --bgTitleEdit: #3a3939 ;
+    --buttonsCustom: #fff;
 
 }
 
@@ -36,7 +37,8 @@ html[data-theme='clean'] {
     --inputBg: #FAFAFA;
     --stockColor: #1d1d1d;
     --bgToggle:#f5f5f5;
-    --bgTitleEdit: #c5c5c5;
+    --bgTitleEdit: #eeeaea;
+    --buttonsCustom: #000;
 }
 
 
@@ -479,6 +481,13 @@ html {
                     margin-top: 1rem;
 
                 }
+
+                .fa-pen-alt, .fa-trash-alt{
+                    color: var(--buttonsCustom);
+
+                }
+
+              
             }
 
         }
@@ -518,7 +527,13 @@ html {
 
                 &--second {
                     width: 85% !important;
+                    display: flex;
                     padding: 0rem 1rem !important;
+
+                    .fa-save{
+                        display: none;
+                    }
+    
                 }
             }
 
